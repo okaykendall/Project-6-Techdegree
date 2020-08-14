@@ -38,6 +38,8 @@ function addPhraseToDisplay(arr) {
         listItem.textContent = char;
         if (listItem.textContent !== " ") {
             listItem.className = 'letter';
+        } else if (listItem.textContent === " ") {
+            listItem.className = 'space'
         }
         ul.appendChild(listItem);
     }
